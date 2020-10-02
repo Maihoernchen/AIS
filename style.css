@@ -1,0 +1,23 @@
+ body {
+    background-color: #000;
+}
+
+div.img {
+    justify-content: center;
+    width: 200;
+    height: 50;
+	display: flex;
+	flex-direction: row;
+}
+div.lappen {
+    color: green;
+	font-size: 100px;
+	text-align: right;
+	margin-top: 5vh;
+}
+div.knopf {
+	text-align: center;
+}
+div.danciniswhattodo {
+}	
+

@@ -6,11 +6,13 @@ let f = 0;
 let howmuchisthefish = 1;
 let bbq = 100;
 let i = 0;
+let wasabi = 10000;
 function init() { 
-    document.getElementsByClassName('danciniswhattod')[0].innerText=`Kosten: ${bbq}`;
-    document.getElementsByClassName('danciniswhattodo')[0].addEventListener('click', danciniswhattodo);
+    document.getElementById('bbqgabel').innerText=`Kosten: ${bbq}`;
+    document.getElementById('wasabigabel').innerText=`Kosten: ${wasabi}`;
+    document.getElementsByClassName('foo')[1].addEventListener('click', danciniswhattodo);
     document.getElementsByClassName('knopf')[0].addEventListener('click', anstupsen);
-    document.getElementsByClassName('danciniswhatithinkido')[0].addEventListener('click', danciniswhatithinkido);
+    document.getElementsByClassName('foo')[0].addEventListener('click', danciniswhatithinkido);
     p = 0;
 	document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
     document.getElementById('majogabel').innerText=`Verdoppler: ${r}`;
@@ -18,7 +20,7 @@ function init() {
 }
 function anstupsen() {
     p+=c;
-    document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
+    document.getElementById('pommesgabel').innerText=`Lappen: ${Math.round(p)}`;
     zinsen();
 }
 function danciniswhattodo() {
@@ -43,13 +45,15 @@ function danciniswhatithinkido() {
         document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
         document.getElementById('majogabel').innerText=`Verdoppler: ${r}`;
         p-= 10000;
+        wasabi *= 1.2;
+        document.getElementById('wasabigabel').innerText=`Kosten: ${Math.round(wasabi)}`;
     }
 }
 function howmuch() {
     howmuchisthefish++;
     bbq*=2;
     console.log(bbq);
-    document.getElementById('bbqgabel').innerText=`Kosten: ${bbq}`;
+    document.getElementById('bbqgabel').innerText=`Kosten: ${Math.round(bbq)}`;
 }
 function zinsen() {
     if  (p > -1) {

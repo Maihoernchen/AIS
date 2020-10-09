@@ -1,4 +1,4 @@
- body {
+body {
     background-color: #000;
 }
 
@@ -11,16 +11,31 @@ div.img {
 }
 div.lappen {
     color: green;
-	font-size: 100px;
+	font-size: 30px;
 	text-align: right;
-	margin-top: 5vh;
+    border: solid 4px;
+    margin-left: 80vw;
+    padding:  30px;
+    margin-top: 5px;
 }
 div.knopf {
 	text-align: center;
+    float: center;
+    position: absolute;
+    margin-left: 35vw;
+    margin-top: -5vw;
 }
 div.danciniswhattodo {
 }
 div.danciniswhattod {
     color: green;
+}
+div.DANCINNN {
+    color: green;
 }	
-
+div.foo {
+    border: solid 2px black;
+    padding: 5px;
+    color: green;
+    margin-top: 5px;
+}

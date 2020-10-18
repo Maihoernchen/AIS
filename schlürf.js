@@ -7,12 +7,14 @@ let howmuchisthefish = 1;
 let bbq = 100;
 let i = 0;
 let wasabi = 10000;
+let themevalue = "dark";
 function init() { 
     document.getElementById('bbqgabel').innerText=`Kosten: ${bbq}`;
     document.getElementById('wasabigabel').innerText=`Kosten: ${wasabi}`;
-    document.getElementsByClassName('foo')[1].addEventListener('click', danciniswhattodo);
+    document.getElementById('clickerrr').addEventListener('click', danciniswhattodo);
     document.getElementsByClassName('knopf')[0].addEventListener('click', anstupsen);
-    document.getElementsByClassName('foo')[0].addEventListener('click', danciniswhatithinkido);
+    document.getElementById('verdppler').addEventListener('click', danciniswhatithinkido);
+	document.getElementsByClassName('mode')[0].addEventListener('click', theme);
     p = 0;
 	document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
     document.getElementById('majogabel').innerText=`Verdoppler: ${r}`;
@@ -64,4 +66,18 @@ function zinsen() {
     
     }
 
+}
+function theme() {
+	if (themevalue === "dark"){
+		themevalue = "light";
+		document.body.style.color = "#007FFF";
+		document.body.style.backgroundColor = "white";
+		document.getElementsByClassName("button")[0].innerText=`Light`;
+	} else if (theme === "light") {
+		themevalue = "ninja";
+	} else {
+		themevalue = "dark";
+		document.body.style.color = "green";
+		document.body.style.backgroundColor = "black";
+	}
 }

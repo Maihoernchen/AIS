@@ -7,10 +7,12 @@ let howmuchisthefish = 1;
 let bbq = 100;
 let i = 0;
 let wasabi = 10000;
-let themevalue = "dark";
+let themevalue = "Dark";
+let important = "Light"
 function init() { 
     document.getElementById('bbqgabel').innerText=`Kosten: ${bbq}`;
     document.getElementById('wasabigabel').innerText=`Kosten: ${wasabi}`;
+	document.getElementById('DARKMODE').innerText=`${important} Mode`;
     document.getElementById('clickerrr').addEventListener('click', danciniswhattodo);
     document.getElementsByClassName('knopf')[0].addEventListener('click', anstupsen);
     document.getElementById('verdppler').addEventListener('click', danciniswhatithinkido);
@@ -68,16 +70,17 @@ function zinsen() {
 
 }
 function theme() {
-	if (themevalue === "dark"){
-		themevalue = "light";
+	if (themevalue === "Dark"){
+		themevalue = "Light";
+		important = "Dark";
 		document.body.style.color = "#007FFF";
 		document.body.style.backgroundColor = "white";
-		document.getElementsByClassName("button")[0].innerText=`Light`;
-	} else if (theme === "light") {
-		themevalue = "ninja";
+		document.getElementById('DARKMODE').innerText=`${important} Mode`;
 	} else {
-		themevalue = "dark";
+		themevalue = "Dark";
+		important = "Light";
 		document.body.style.color = "green";
 		document.body.style.backgroundColor = "black";
+		document.getElementById('DARKMODE').innerText=`${important} Mode`;
 	}
 }

@@ -80,7 +80,7 @@ function theme() {
 		themevalue = "Dark";
 		important = "Light";
 		document.body.style.color = "green";
-		document.body.style.backgroundColor = "black";
+		document.body.style.backgroundColor = "#111";
 		document.getElementById('DARKMODE').innerText=`${important} Mode`;
 	}
 }

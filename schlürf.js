@@ -9,16 +9,16 @@ let i = 0;
 let wasabi = 10000;
 let themevalue = "Dark";
 let important = "Light"
-function init() { 
+function init() {
     document.getElementById('bbqgabel').innerText=`Kosten: ${bbq}`;
     document.getElementById('wasabigabel').innerText=`Kosten: ${wasabi}`;
-	document.getElementById('DARKMODE').innerText=`${important} Mode`;
+		document.getElementById('DARKMODE').innerText=`${important} Mode`;
     document.getElementById('clickerrr').addEventListener('click', danciniswhattodo);
     document.getElementsByClassName('knopf')[0].addEventListener('click', anstupsen);
     document.getElementById('verdppler').addEventListener('click', danciniswhatithinkido);
-	document.getElementsByClassName('mode')[0].addEventListener('click', theme);
+		document.getElementsByClassName('mode')[0].addEventListener('click', theme);
     p = 0;
-	document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
+		document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
     document.getElementById('majogabel').innerText=`Verdoppler: ${r}`;
     document.getElementById('ketchupgabel').innerText=`Auto-Clicker: ${f}`;
 }
@@ -63,9 +63,9 @@ function zinsen() {
     if  (p > -1) {
         while (i < f) {
             setInterval(anstupsen, 1000);
-            i++;       
+            i++;
         }
-    
+
     }
 
 }

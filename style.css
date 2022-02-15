@@ -1,12 +1,12 @@
 body {
     background-color: #111;
-	color: green;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
+		color: green;
+		-webkit-touch-callout: none;
+  	-webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+  	user-select: none;
 }
 
 div.img {
@@ -14,26 +14,34 @@ div.img {
 	top: 20;
 	right: 40;
 }
+div.lappenpapa {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: 420px;
+	width: 100%;
+}
 div.lappen {
+	position: relative;
 	font-size: 30px;
 	text-align: right;
-    border: solid 4px;
-    margin-left: 80vw;
-    padding:  30px;
-    margin-top: 5px;
+  border: solid 4px;
+  margin-left: 80vw;
+  padding:  30px;
+  margin-top: 5px;
 }
 div.knopf {
-	text-align: center;
-    float: center;
-    position: relative;
-	bottom: 40vh;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 div.danciniswhattodo {
 }
 div.danciniswhattod {
 }
 div.DANCINNN {
-}	
+}
 div.foo {
     border: solid 2px #111;
     padding: 5px;
@@ -41,7 +49,7 @@ div.foo {
 }
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 60px;
   height: 34px;

@@ -1,4 +1,5 @@
-window.addEventListener('load', init);
+{
+document.addEventListener('DOMContentLoaded', init);
 
 let c = 1;
 let r = 0;
@@ -12,13 +13,13 @@ let important = "Light"
 function init() {
     document.getElementById('bbqgabel').innerText=`Kosten: ${bbq}`;
     document.getElementById('wasabigabel').innerText=`Kosten: ${wasabi}`;
-		document.getElementById('DARKMODE').innerText=`${important} Mode`;
+    document.getElementById('DARKMODE').innerText=`${important} Mode`;
     document.getElementById('clickerrr').addEventListener('click', danciniswhattodo);
     document.getElementsByClassName('knopf')[0].addEventListener('click', anstupsen);
     document.getElementById('verdppler').addEventListener('click', danciniswhatithinkido);
-		document.getElementsByClassName('mode')[0].addEventListener('click', theme);
+    document.getElementsByClassName('mode')[0].addEventListener('click', theme);
     p = 0;
-		document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
+    document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
     document.getElementById('majogabel').innerText=`Verdoppler: ${r}`;
     document.getElementById('ketchupgabel').innerText=`Auto-Clicker: ${f}`;
 }
@@ -55,7 +56,7 @@ function danciniswhatithinkido() {
 }
 function howmuch() {
     howmuchisthefish++;
-    bbq*=2;
+    bbq*=1.2;
     console.log(bbq);
     document.getElementById('bbqgabel').innerText=`Kosten: ${Math.round(bbq)}`;
 }
@@ -79,8 +80,10 @@ function theme() {
 	} else {
 		themevalue = "Dark";
 		important = "Light";
-		document.body.style.color = "green";
+		document.body.style.color = "blue";
 		document.body.style.backgroundColor = "#111";
 		document.getElementById('DARKMODE').innerText=`${important} Mode`;
 	}
+}
+
 }

@@ -9,9 +9,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
-
 div.img {
-    position: relative;
     top: 20;
     right: 40;
     grid-column-start: 1;
@@ -29,19 +27,18 @@ div.lappen {
     padding:  30px;
     margin-top: 5px;
 }
-.knopf {
+#DARKMODE {
+    margin-left: 70px;
+}
+
+div.aha {
     grid-column-start: 1;
-    grid-column-end: 1;
+    grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 4;
-    width: 100%;
+    text-align: center;
 }
-div.danciniswhattodo {
-}
-div.danciniswhattod {
-}
-div.DANCINNN {
-}
+
 div.foo {
     border: solid 2px #111;
     padding: 5px;

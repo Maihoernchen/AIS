@@ -36,6 +36,7 @@ function danciniswhattodo() {
             document.getElementById('ketchupgabel').innerText=`Auto-Clicker: ${f}`;
             howmuch();
     } else {
+        location.href = 'https://fckaf.de/tD6';
         console.log('Nööö')
         p-= bbq;
         document.getElementById('pommesgabel').innerText=`Lappen: ${p}`;
@@ -52,6 +53,8 @@ function danciniswhatithinkido() {
         p-= 10000;
         wasabi *= 1.2;
         document.getElementById('wasabigabel').innerText=`Kosten: ${Math.round(wasabi)}`;
+    } else {
+        location.href = 'https://fckaf.de/tD6';
     }
 }
 function howmuch() {
